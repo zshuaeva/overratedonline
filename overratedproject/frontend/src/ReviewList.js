@@ -25,9 +25,8 @@ function ReviewList() {
     <div className="review-container">
       {reviewCard.map(([reviewText, reviewScore], index) => (
         <div key={index} className="review-card">
-          <div className="card" style={{ width: '100%', height: '100%' }}>
-            <div className="card-body">
-              <h5 className="card-title">
+          <div className="card-wrapper">
+          <h5 className="card-title">
                 {[...Array(5)].map((review, stars) => (
                   <img
                     key={stars}
@@ -37,6 +36,7 @@ function ReviewList() {
                   />
                 ))}
               </h5>
+            <div className="card-body">
               <p className="card-text">{reviewText}</p>
             </div>
           </div>
