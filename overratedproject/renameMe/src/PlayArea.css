@@ -1,0 +1,36 @@
+body {
+  padding-left: 15px;
+}
+.card-title {
+  font-weight: bold;
+  color: white;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+.card-body {
+  flex-basis: 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-bottom: 20px;
+  width: 207px;
+  height: 287px;
+  background-color: red;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.card-body textarea {
+  max-width: 100%;
+  flex-grow: 1;
+  resize: none;
+  box-sizing: border-box;
+  height: 180px;
+  border-radius: 10px;
+  background-color: white;
+  color: white;
+}
