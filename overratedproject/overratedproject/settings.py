@@ -46,7 +46,17 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "overratedproject",
     "corsheaders",
+    "channels",
 ]
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    },
+}
+
+
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
